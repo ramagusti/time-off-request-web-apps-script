@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Email template</title>
+        <style>
+        table,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        th,
+        td {
+            border: none;
+            border-collapse: inherit;
+            border-spacing: 0;
+            border-color: inherit;
+            vertical-align: inherit;
+            /*text-align: left;*/
+            font-weight: inherit;
+        }
+        
+        body {
+            font-family: Roboto, Noto, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 22.54714px;
+        }
+        /* Outlines the grids, remove when sending */
+        
+        table td {
+            /*border: 1px solid white;*/
+        }
+        /* CLIENT-SPECIFIC STYLES */
+        
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* RESET STYLES */
+        
+        img {
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        table {
+            border-collapse: collapse !important;
+        }
+        
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        /* iOS BLUE LINKS */
+        
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        /* ANDROID CENTER FIX */
+        
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+        /* MEDIA QUERIES */
+        
+        
+        .email__template {
+            height: 559px;
+            width: 600px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+        }
+        
+        .card__indicator--green {
+            border-top: 3px solid #38C968;
+        }
+        
+        .card {
+            height: 148px;
+            width: 600px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 2px 0 #78909C;
+            border: 1px solid #eaeff1;
+            border-top: none;
+            cellpadding: 0px;
+            cellspacing: 0px;
+        }
+        
+        /* .image__wrapper--rounded {
+            position: relative;
+        } */
+        
+        /* .image--rounded {
+            position: absolute;
+            height: 45px;
+            top: 0;
+        } */
+        
+        .image-icon {
+            z-index: 0;
+        }
+        
+        /* .mask {
+            z-index: 1;
+        } */
+        
+        /* .raet__button--container {
+            background-color: #09c;
+            border: 1px solid #007aa3;
+            border-radius: 5px;
+        } */
+        
+        .raet__button {
+            padding: 13px 24px;
+        }
+        
+        .raet__button a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        .raet__button a: hover {
+            background-color: #007aa3;
+            cursor: pointer;
+        }
+        
+        .employee__greeting {
+            height: 5px;
+            width: 155px;
+            color: #455A64;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+        }
+        
+        .process__description {
+            height: 20px;
+            width: 520px;
+            color: #3A3A3A;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        
+        .process__info {
+            height: 14px;
+            width: 520px;
+            color: #3A3A3A;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        
+        .employee__info {
+            padding: 4px 10px 10px 0px;
+        }
+        
+        .employee__info--name {
+            height: 14px;
+            color: #455A64;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            display: block;
+            margin: 0;
+            padding: 2px 0px;
+            width: 100%;
+        }
+        
+        .employee__info--designation {
+            height: 14px;
+            color: #455A64;
+            font-size: 14px;
+            line-height: 14px;
+            display: block;
+            margin: 0;
+            padding: 2px 0px;
+            width: 100%;
+        }
+        
+        .row__padding {
+            padding: 12px 38px;
+            vertical-align: middle;
+        }
+        
+        .seperator {
+            font-size: 1px;
+            line-height: 1px;
+            background: #ECEFF1;
+            width: 520px;
+        }
+        
+        .full__width {
+            width: 100%;
+        }
+        
+        .card__indicator--yellow {
+            border-top: 3px solid #FEBA1B;
+        }
+
+        .card__indicator--red {
+            border-top: 3px solid #ff0000;
+        }
+        
+        .user__email--readonly {
+            height: 14px;
+            width: 180px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;                
+            text-decoration: none;
+            color: #455A64;
+        }
+          
+        .otp__text {
+            height: 38px;
+            width: 107px;
+            color: #455A64;
+            font-size: 38px;
+            line-height: 38px;
+        }
+    </style>
+</head>
+  <?var data = getDataForm();?>
+<body class="email__template">
+    <center>
+        <table>
+            <tr>
+                <td align="center" valign="top">
+                    <!-- Begin Logo partial -->
+
+                    <!-- End Logo partial -->
+
+                    <!-- Begin Card partial-->
+                    <table class="wrapper card">
+                        <!-- Begin Card Indicator partial -->
+                        <tr>
+                            <td class="card__indicator--yellow">&nbsp;</td>
+                        </tr>
+                        <!-- End Card Indicator partial -->
+                      
+                        <!-- Begin Introduction partial -->
+                        <tr>
+                            <td class="row__padding">       
+                                <table class="wrapper">
+                                    <tr>
+                                        <td>
+                                            <table class="container">
+                                                <tr>
+                                                    <td>
+                                                        <span class="employee__greeting">Hi,
+                                                            Thank you for your response! We will notify the requester shortly.
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- End Introduction partial -->
+                      
+                        <!-- Begin Seperator partial -->
+                        <tr>
+                            <td class="row__padding">
+                                <table class="wrapper">
+                                    <tr>
+                                        <td>
+                                            <table class="container">
+                                                <tr>
+                                                    <td class="seperator">&nbsp;</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- End Seperator partial -->
+                      
+                         <!-- Begin Description partial -->
+                        <tr>
+                            <td class="row__padding">        
+                                <table class="wrapper">
+                                    <tr>
+                                        <td>
+                                            <table class="container">
+                                                <tr>
+                                                    <td>
+                                                            <span class="employee__greeting">
+                                                            Name:<br>
+                                                            Email:<br>
+                                                            Starting On:<br>
+                                                            Returning to Work:<br>
+                                                            Type of Leave:<br>
+                                                            Reason for Leave:<br>
+                                                            Applied At:<br>
+                                                            Status:<bt>
+                                                            </span>        
+                                                    </td>
+                                                    <td style="padding-left: 30px;">
+                                                        <span class="employee__greeting">
+                                                          <strong><?= data.name ?></strong><br>
+                                                          <strong><?= data.email ?></strong><br>
+                                                          <strong><?= data.startingOn ?></strong><br>
+                                                          <strong><?= data.endOn ?></strong><br>
+                                                          <strong><?= data.typeOfLeave ?></strong><br>
+                                                          <strong><?= data.reasonLeave ?></strong><br>
+                                                          <strong><?= data.appliedDate ?></strong><br>
+                                                          <b style="color:#FEBA1B">Need More Information</b>    
+                                                        </span>        
+                                                </td>
+                                                </tr>
+                                            </table>
+                                            <p>
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <!-- End Description partial -->
+                      
+                  
+                      
+                    </table>
+                    <!-- End Card partial-->
+
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
