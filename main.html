@@ -1,0 +1,21 @@
+<script>
+  function getParams(e) {
+    google.script.url.getLocation(function(location) {
+
+      const id = location.parameters.id.toString();
+      const emailRequester = location.parameters.email.toString();
+      const status = location.parameters.status.toString().replaceAll("-", " ");
+
+      google.script.run.setStatus(id, status.toProperCase());
+      if (status == "approved") {
+        google.script.run.setCalendar(id);
+      }
+      console.log(emailRequester);
+      google.script.run.handleApproval(id,status,emailRequester)
+    });
+  }
+
+  String.prototype.toProperCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+  };
+</script>
